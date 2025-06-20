@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+
+    <style>
+
+        .box{
+            font-size: 60px;
+            background-color: rgb(168, 243, 218);
+            color: rgb(2, 106, 30);
+            text-align: center;
+            display: none;
+            }
+
+        @media (max-width:100px){
+            #box1{
+                display: block;
+                background-color: bisque;
+                color: rgb(12, 12, 126);
+            }
+        }
+
+        @media (min-width:100px) and (max-width:200px){
+            #box2{
+                display: block;
+                background-color: rgb(246, 144, 21);
+                color: rgb(2, 60, 41);
+            }
+        }   
+        
+                @media (min-width:200px) and (max-width:300px){
+            #box3{
+                display: block;
+                background-color: rgb(183, 137, 251);
+                color: rgb(60, 4, 112);
+            }
+        }    
+
+           @media (min-width:300px) and (max-width:400px){
+            #box4{
+                display: block;
+                background-color: rgb(203, 255, 196);
+                color: rgb(189, 198, 6);
+            }
+        }    
+
+           @media (min-width:400px) and (max-width:1000px){
+            #box5{
+                display: block;
+                background-color: rgb(250, 180, 162);
+                color: brown;
+            }
+        }    
+
+        
+        button{
+            color: rgb(4, 56, 56);
+            background-color: rgb(153, 245, 245);
+        }
+    </style>
+</head>
+<div class="box" id="box1">i am computer</div>
+<div class="box" id="box2">i am mobile</div>
+<div class="box" id="box3">i am table</div>
+<div class="box" id="box4">i am bike</div>
+<div class="box" id="box5">i am car</div>
+<body>
+     
+<button type="button" >Click Me</button>
+
+</body>
+</html>
